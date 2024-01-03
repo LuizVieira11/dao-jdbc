@@ -49,7 +49,7 @@ public class Program {
 
         System.out.println("==== TEST 6: seller deletion ====");
         sellerDao.deleteById(8);
-        System.out.println("Delete Complete");
+        System.out.println("Delete Completed");
         System.out.println();
 
     }

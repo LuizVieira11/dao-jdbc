@@ -2,11 +2,8 @@ package application;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
-import model.dao.SellerDao;
 import model.entities.Department;
-import model.entities.Seller;
 
-import java.util.Date;
 import java.util.List;
 
 public class Program2 {
@@ -26,11 +23,19 @@ public class Program2 {
         }
 
         System.out.println("\n==== TEST 3: department insert ====");
+        Department newDepartment = new Department(null, "Crypto");
+//        departmentDao.insert(newDepartment);
+        System.out.println("Inserted! New id = " + newDepartment.getId());
 
         System.out.println("\n==== TEST 4: department update ====");
+        dep = departmentDao.findById(1);
+        dep.setName("PCs");
+        departmentDao.update(dep);
+        System.out.println("Update completed");
 
         System.out.println("\n==== TEST 5: department deletion ====");
-
+//        departmentDao.deleteById(6);
+        System.out.println("Delete Completed");
 
     }
 
