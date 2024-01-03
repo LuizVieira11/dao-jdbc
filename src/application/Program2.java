@@ -15,15 +15,17 @@ public class Program2 {
 
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
-        System.out.println("==== TEST 1: seller findById ====");
+        System.out.println("==== TEST 1: department findById ====");
+        Department dep = departmentDao.findById(2);
+        System.out.println(dep);
 
-        System.out.println("==== TEST 2: seller findAll ====");
+        System.out.println("\n==== TEST 2: department findAll ====");
 
-        System.out.println("==== TEST 3: seller insert ====");
+        System.out.println("\n==== TEST 3: department insert ====");
 
-        System.out.println("==== TEST 4: seller update ====");
+        System.out.println("\n==== TEST 4: department update ====");
 
-        System.out.println("==== TEST 5: seller deletion ====");
+        System.out.println("\n==== TEST 5: department deletion ====");
 
 
     }
