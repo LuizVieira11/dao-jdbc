@@ -20,6 +20,10 @@ public class Program2 {
         System.out.println(dep);
 
         System.out.println("\n==== TEST 2: department findAll ====");
+        List<Department> departments = departmentDao.findAll();
+        for(Department d : departments){
+            System.out.println(d);
+        }
 
         System.out.println("\n==== TEST 3: department insert ====");
 
